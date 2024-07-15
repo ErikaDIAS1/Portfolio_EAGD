@@ -1,0 +1,121 @@
+/* ESTILO GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color:  #F7477A;;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+
+button:hover,
+form .btn-enviar input:hover {
+  box-shadow: 0px 0px 15px #FDA066;;
+  transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+  padding: 40px 4%;
+}
+
+header>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: .4s;
+  font-size: 20px;
+}
+
+header nav.menu-desktop a:hover {
+  color: #fff;
+  transform: scale(1.5);
+  background-color: #f74779;
+  border-top: 1px;
+  border-radius: 10px 10px 10px 10px;
+  padding: 4px 8px;
+  box-shadow: 0px 5px 5px #fda0668e;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+/* ESTILO TOPO DO SITE */
+section.topo-do-site{
+  padding: 40px 4%;
+}
+
+section.topo-do-site.flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+section.topo-do-site h1{
+  color:#fff;
+  font-size: 38px;
+  line-height: 40px;
+
+}
+
+section.topo-do-site .txt-topo-site h1 span{
+  color:#F7477A;
+  font-size: 76px;
+}
+
+section.topo-do-site .txt-topo-site p{
+  color:#fff;
+  margin: 40px 0px;
+  font-size: 20px;
+}
+
+.txt-topo-site .img-topo-site img{
+  position: relative;
+  animation: 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+      top: 0;
+  }
+
+  100% {
+      top: 30px;
+  }
+}
